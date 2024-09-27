@@ -10,6 +10,6 @@ import { Page } from '../templates/page.js';
  */
 export const MainPage = () => (
     Page([
-        Div({ class: 'content' }, 'Main page renderd by Base Framework.')
+        Div({ class: 'content' }, 'Main page rendered by Base framework.')
     ])
 );
