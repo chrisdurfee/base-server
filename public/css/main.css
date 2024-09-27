@@ -1,0 +1,32 @@
+@import url('colors/color.css');
+
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+    background-color: var(--base-primary);
+    color: #2B303A;
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--base-secondary);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
