@@ -1,9 +1,8 @@
 # Base Example Server App
 
-This is an example server app for Base framework.
-[Base Framework](https://github.com/chrisdurfee/base)
+This is an example server app for Base framework. It is a simple server-side rendered application that demonstrates the framework's capabilities.
 
-It is a simple server-side rendered application that demonstrates the framework's capabilities.
+For more information on Base: [Base Framework](https://github.com/chrisdurfee/base)
 
 ## Layouts
 
