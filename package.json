@@ -6,6 +6,9 @@
 		"start": "node ./bin/www.js"
 	},
 	"type": "module",
+	"devDependencies": {
+		"tailwindcss": "^3.4.13"
+	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",

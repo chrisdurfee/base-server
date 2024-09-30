@@ -1,6 +1,6 @@
-import { Body, Head, Html, Link, Main, Script } from '@base-framework/atoms';
+import { Body, Head, Html, Link, Script } from '@base-framework/atoms';
 import { Atom } from '@base-framework/base';
-import { HeaderNav } from '../organisms/organisms.js';
+import MainLayout from '../organisms/website/main.js';
 
 /**
  * Page
@@ -16,8 +16,7 @@ export const Page = Atom((props, children) => (
             Link({ rel: 'stylesheet', href: '/css/main.css' })
         ]),
         Body({ class: `main-page ${props.class}` }, [
-            Main([
-                HeaderNav(),
+            MainLayout([
                 ...children
             ])
         ])
