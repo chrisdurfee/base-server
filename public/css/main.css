@@ -1,7 +1,4 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
+@import url('styles.css');
 @import url('colors/color.css');
 
 html, body{
