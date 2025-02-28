@@ -18,9 +18,9 @@
 		"autoprefixer": "^10.4.20",
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",
-		"express": "~4.16.1",
+		"express": "^4.21.2",
 		"http-errors": "~1.6.3",
-		"jade": "~1.11.0",
+		"jade": "^1.9.2",
 		"morgan": "~1.9.1",
 		"postcss": "^8.4.47",
 		"postcss-cli": "^11.0.0"
