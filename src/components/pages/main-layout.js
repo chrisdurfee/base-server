@@ -1,5 +1,6 @@
 import { Div } from '@base-framework/atoms';
 import { Atom } from '@base-framework/base';
+import { useClient as usClient } from '../atoms/use-client.js';
 import { Header } from './header/header.js';
 
 /**
@@ -11,7 +12,9 @@ import { Header } from './header/header.js';
  */
 export const MainLayout = Atom((props, children) => (
     Div({ class: 'flex flex-auto flex-col relative' }, [
-        new CookieConsentBar(),
+        usClient({
+            src: './home/hero/cookie-consent-bar.js'
+        }),
         Header(),
         Div({ ...props, class: 'flex flex-auto flex-col' }, children)
     ])

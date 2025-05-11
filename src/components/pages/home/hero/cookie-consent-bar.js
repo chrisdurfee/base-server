@@ -83,6 +83,8 @@ export const CookieConsentBar = Jot(
     setContainer(container)
     {
         // @ts-ignore
-        this.container = app.root;
+        this.container = document.body;
     }
 });
+
+export default CookieConsentBar;
