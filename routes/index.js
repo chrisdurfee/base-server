@@ -1,7 +1,8 @@
 import { Builder } from '@base-framework/base';
 import express from 'express';
-import { MainPage } from "../src/components/pages/main-page.js";
-import { TestPage } from "../src/components/pages/test-page.js";
+import { AboutPage } from "../src/components/pages/about/about-page.js";
+import { HomePage } from "../src/components/pages/home/home-page.js";
+import { WebsitePage } from '../src/components/pages/website-page.js';
 
 const router = express.Router();
 
@@ -13,17 +14,33 @@ const router = express.Router();
  */
 const render = (page) =>
 {
-	return Builder.render(page);
+	const website = createPage(page);
+	return Builder.render(website);
 };
 
+/**
+ * This will create the website page.
+ *
+ * @param {object} page
+ * @returns {object}
+ */
+const createPage = (page) => (
+	WebsitePage([
+		page
+	])
+);
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
-	const html = render(MainPage);
+router.get('/', function (req, res, next)
+{
+	const html = render(HomePage());
+	console.log(html)
 	res.send(html);
 });
 
-router.get('/test', function(req, res, next) {
-	const html = render(TestPage);
+router.get('/about', function (req, res, next)
+{
+	const html = render(AboutPage());
 	res.send(html);
 });
 

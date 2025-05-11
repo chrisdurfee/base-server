@@ -1,21 +1,34 @@
 {
 	"name": "base-server",
 	"version": "0.0.0",
+	"description": "This is an example website that uses the base framework to render on the server.",
 	"private": true,
 	"scripts": {
-		"start": "node ./bin/www.js",
-		"build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css"
+		"build:css": "postcss public/css/dashr.css -o public/css/styles.css",
+		"start": "npm run build:css && node ./bin/www.js",
+		"dev": "npm run build:css -- --watch & nodemon --watch public/css/styles.css --exec \"node ./bin/www.js\""
 	},
 	"type": "module",
+	"keywords": [
+		"JavaScript",
+		"Framework",
+		"Base",
+		"ES6",
+		"server-side rendering",
+		"SSR"
+	],
+	"author": "Chris Durfee",
+	"license": "ISC",
 	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.5.3",
 		"tailwindcss": "^3.4.13"
 	},
 	"dependencies": {
 		"@base-framework/atoms": "^1.0.41",
-		"@base-framework/base": "^3.0.296",
+		"@base-framework/base": "^3.0.295",
 		"@base-framework/organisms": "^1.0.69",
-		"@base-framework/ui": "^1.0.57",
-		"autoprefixer": "^10.4.20",
+		"@base-framework/ui": "^1.0.54",
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",
 		"express": "^4.21.2",
@@ -24,5 +37,9 @@
 		"morgan": "~1.9.1",
 		"postcss": "^8.4.47",
 		"postcss-cli": "^11.0.0"
-	}
+	},
+	"files": [
+		"package.json",
+		"readme.md"
+	]
 }
