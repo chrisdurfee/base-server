@@ -14,25 +14,9 @@ export const useClient = (props) => (
 	},
 	`
 import { Import, Builder } from "@base-framework/base";
-
-/**
- * Imports the component and adds it to the scripts parent.
- *
- * @returns {void}
- */
-const importLayout = (scriptTag, src) =>
-{
-	const parent = scriptTag.parentElement;
-
-	Builder.render(
-		Import({
-			src: () => import(src)
-		}),
-		parent
-	);
-};
+imoprt { importLayout } from "./import-layout.js";
 
 const scriptTag = document.currentScript;
-importLayout(scriptTag, '${props.src}');
+importLayout(scriptTag, ${props.src});
 	`)
 );

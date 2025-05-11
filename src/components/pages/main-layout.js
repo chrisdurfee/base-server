@@ -13,7 +13,7 @@ import { Header } from './header/header.js';
 export const MainLayout = Atom((props, children) => (
     Div({ class: 'flex flex-auto flex-col relative' }, [
         usClient({
-            src: './home/hero/cookie-consent-bar.js'
+            src: () => import('./home/hero/cookie-consent-bar.js')
         }),
         Header(),
         Div({ ...props, class: 'flex flex-auto flex-col' }, children)
