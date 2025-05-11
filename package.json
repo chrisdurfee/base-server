@@ -23,7 +23,9 @@
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.5.3",
 		"postcss-import": "^16.1.0",
-		"tailwindcss": "^3.4.13"
+		"tailwindcss": "^3.4.13",
+		"vite": "^6.3.5",
+		"vite-express": "^0.21.1"
 	},
 	"dependencies": {
 		"@base-framework/atoms": "^1.0.41",
@@ -37,7 +39,8 @@
 		"jade": "^0.29.0",
 		"morgan": "~1.9.1",
 		"postcss": "^8.4.47",
-		"postcss-cli": "^11.0.0"
+		"postcss-cli": "^11.0.0",
+		"vite-plugin-node": "^5.0.1"
 	},
 	"files": [
 		"package.json",
