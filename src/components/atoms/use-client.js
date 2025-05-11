@@ -22,18 +22,17 @@ import { Import, Builder } from "@base-framework/base";
  */
 const importLayout = (scriptTag, src) =>
 {
-	const scriptTag = document.currentScript;
 	const parent = scriptTag.parentElement;
 
 	Builder.render(
 		Import({
-			src: () => import(src})
+			src: () => import(src)
 		}),
 		parent
 	);
 };
 
 const scriptTag = document.currentScript;
-importLayout(scriptTag, ${props.src});
+importLayout(scriptTag, '${props.src}');
 	`)
 );
