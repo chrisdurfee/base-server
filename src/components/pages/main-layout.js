@@ -11,9 +11,9 @@ import { Header } from './header/header.js';
  */
 export const MainLayout = Atom((props, children) => (
     Div({ class: 'flex flex-auto flex-col relative' }, [
-        //new CookieConsentBar(),
+        new CookieConsentBar(),
         Header(),
-        //Div({ ...props, class: 'flex flex-auto flex-col' }, children)
+        Div({ ...props, class: 'flex flex-auto flex-col' }, children)
     ])
 ));
 

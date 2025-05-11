@@ -18,7 +18,7 @@ export const WebsitePage = (children) =>
         [
             Head([
                 Meta({ charset: "utf-8" }),
-                Title({}, "Base Example"),
+                Title("Base Example"),
 
                 // meta description/keywords
                 Meta({ name: "description", content: "" }),

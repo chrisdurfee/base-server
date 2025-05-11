@@ -9,7 +9,7 @@ import usersRouter from './routes/users.js'; // .js extension added
 const app = express();
 
 // view engine setup
-app.set('views', path.join(path.resolve(), 'views')); // __dirname replaced with path.resolve()
+//app.set('views', path.join(path.resolve(), 'views')); // __dirname replaced with path.resolve()
 //app.set('view engine', 'jade');
 
 app.use(logger('dev'));
