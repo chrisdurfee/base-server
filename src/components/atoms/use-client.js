@@ -13,10 +13,7 @@ export const useClient = (props) => (
 		async: true
 	},
 	`
-import { Import, Builder } from "@base-framework/base";
-imoprt { importLayout } from "./import-layout.js";
-
 const scriptTag = document.currentScript;
-importLayout(scriptTag, ${props.src});
+importLayout(scriptTag, ${props.src.toString()});
 	`)
 );

@@ -4,9 +4,9 @@
 	"description": "This is an example website that uses the base framework to render on the server.",
 	"private": true,
 	"scripts": {
-		"build:css": "postcss public/css/dashr.css -o public/css/styles.css",
-		"start": "npm run build:css && node ./bin/www.js",
-		"dev": "npm run build:css -- --watch & nodemon --watch public/css/styles.css --exec \"node ./bin/www.js\""
+		"dev": "vite",
+		"build": "vite build && tsc",
+		"preview": "vite preview"
 	},
 	"type": "module",
 	"keywords": [

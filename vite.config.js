@@ -3,8 +3,7 @@ import { VitePluginNode } from 'vite-plugin-node';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [],
-	base: '/base-update/',
+	base: '/',
 	server: {
 		open: true
 	},
