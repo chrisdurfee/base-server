@@ -1,4 +1,4 @@
-import { Body, Head, Html, Link, Meta, Script, Title } from "@base-framework/atoms";
+import { Body, Head, Html, Link, Meta, Title } from "@base-framework/atoms";
 
 /**
  * Index
@@ -69,8 +69,7 @@ export const Index = (children) =>
 					name: "msapplication-TileImage",
 					content: "./images/icons/icon-192.png"
 				}),
-				Meta({ name: "msapplication-TileColor", content: "#09090b" }),
-				Script({ type: 'module', async: true, src: '/src/client-entry.js' })
+				Meta({ name: "msapplication-TileColor", content: "#09090b" })
 			]),
 
 			Body({ class: "app-container bg-background relative flex flex-auto flex-col min-h-screen max-w-full will-change-contents z-10" }, children)
